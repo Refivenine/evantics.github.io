@@ -57,6 +57,22 @@
 .btn-youtube:hover {
     box-shadow: 0 0 25px rgba(255, 65, 108, 0.8);
 } }
+        /* MOBILE RULES (Only for phones) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less empty space on the edges */
+    }
+    .container {
+        padding: 20px; /* More room for text */
+        margin-top: 10px;
+    }
+    .btn {
+        display: block; /* Stacks buttons on top of each other */
+        width: 100%;    /* Makes buttons full width (easier to tap) */
+        margin: 10px 0; /* Adds space between the stacked buttons */
+        box-sizing: border-box; /* Prevents button size errors */
+    }
+}
     </style>
 </head>
 <body>
