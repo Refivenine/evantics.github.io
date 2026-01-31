@@ -22,7 +22,41 @@
     /* SIZE AND POSITION */
     max-width: 600px;
     margin: 60px auto; /* Centers the box on the page */
+
+       
+       
+      /* MAIN BUTTON STYLE (Blue/Purple) */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    
+    /* THE NEON EFFECT */
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
 }
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 114, 255, 0.8);
+}
+
+/* YOUTUBE STYLE (Red/Orange) */
+.btn-youtube {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b) !important;
+    box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
+}
+
+.btn-youtube:hover {
+    box-shadow: 0 0 25px rgba(255, 65, 108, 0.8);
+} }
     </style>
 </head>
 <body>
@@ -37,7 +71,7 @@
 <p>Welcome to my space. Here you can view my latest videos and stories.</p>
         
         <a href="https://drive.google.com/file/d/1hl4z6_sYexeGZbLKQDBd0XhQxJWV31_H/view?usp=sharing" class="btn">View My Work</a>
-  <a href="https://www.youtube.com/@evantics.refivenine" class="btn" style="background-color: #FF0000; margin-left: 10px;">Watch on YouTube</a>
+  <a href="https://www.youtube.com/@evantics.refivenine" class="btn btn-youtube">Watch on YouTube</a>be</a>
     </div>
 
 </body>
