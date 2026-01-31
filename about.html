@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            min-height: 100vh;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        /* GLASS BOX STYLE */
+        .container {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        /* MENU BAR STYLE */
+        .topnav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .topnav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #00c6ff;
+        }
+
+        /* BUTTON STYLES */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 114, 255, 0.8);
+        }
+
+        /* MOBILE FIX */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; margin-top: 10px; }
+            .btn { display: block; width: 100%; margin: 10px 0; box-sizing: border-box; }
+            .topnav { display: flex; justify-content: center; width: 100%; box-sizing: border-box; }
+            .topnav a { font-size: 14px; padding: 10px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+      <a href="index.html">🏠 Home</a>
+      <a href="projects.html">🎮 Projects</a>
+      <a href="about.html">👤 About Me</a>
+    </div>
+
+    <div class="container">
+        <h1>Who is Refivenine?</h1>
+        
+        <p>Hi! I am a developer, writer, and gamer.</p>
+        <p>I create immersive stories and engaging games. Welcome to my digital workspace.</p>
+        
+        <hr style="border-color: rgba(255,255,255,0.2);">
+
+        <h3>🚀 My Skills</h3>
+        <p>🎮 Game Development</p>
+        <p>📚 Creative Writing</p>
+        <p>💻 App Building</p>
+
+        <hr style="border-color: rgba(255,255,255,0.2);">
+
+        <h3>📩 Contact Me</h3>
+        <a href="mailto:your-email@example.com" class="btn">Send Email</a>
+    </div>
+
+</body>
+</html>
