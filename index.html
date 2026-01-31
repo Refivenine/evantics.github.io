@@ -11,6 +11,33 @@
     color: white; /* This makes the text white so it's readable */
     min-height: 100vh;
 }
+        /* --- NAVIGATION MENU --- */
+.topnav {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark glass */
+    overflow: hidden;
+    border-radius: 15px; /* Rounded edges */
+    margin-bottom: 20px; /* Space below the menu */
+    display: inline-block; /* Keeps it tight to the buttons */
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light up when touched */
+    color: #00c6ff; /* Neon Blue text */
+}
        .container {
     /* THE GLASS EFFECT */
     background-color: rgba(0, 0, 0, 0.75); /* Black background, 75% visible */
@@ -76,6 +103,22 @@
     </style>
 </head>
 <body>
+    <div class="topnav">
+  <a href="index.html">🏠 Home</a>
+  <a href="projects.html">🎮 Projects</a>
+  <a href="about.html">👤 About Me</a>
+</div>
+<br> ```
+
+### **Step 3: Save and Refresh**
+1.  Scroll down and click **Commit changes**.
+2.  Wait 30 seconds and refresh your site.
+
+**You should see a cool Menu Bar at the very top.**
+* The "Home" button will reload the page (that works!).
+* The "Projects" button will give you a **404 Error** (because we haven't created that file yet).
+
+**Tell me: Do you see the menu bar at the top?** (If yes, we will create the missing `projects.html` page next!)
 
     <div class="container">
         <h1>Refivenine</h1>
