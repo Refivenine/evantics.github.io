@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REFIVENINE | Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            /* Sword Cursor */
+            cursor: url('sword.png'), auto;
+        }
+
+        /* GOLD NAVIGATION */
+        .topnav {
+            background-color: #1a1a1a;
+            overflow: hidden;
+            border-bottom: 2px solid #ffd700; /* Gold Border */
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #ffd700;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .topnav a:hover {
+            background-color: #ffd700;
+            color: #000;
+            box-shadow: 0 0 15px #ffd700;
+        }
+
+        /* LEVITATING CONTAINER */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            display: inline-block;
+            border: 2px solid #ffd700;
+            background: rgba(20, 20, 20, 0.9);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            max-width: 800px;
+            width: 90%;
+            animation: float-ghost 6s ease-in-out infinite;
+        }
+
+        h1 { font-size: 40px; text-shadow: 0 0 10px #ffd700; margin-bottom: 10px; }
+        h2 { font-size: 24px; color: #d4af37; margin-top: 0; }
+        p { color: #cccccc; font-size: 16px; }
+
+        /* VIDEO BOXES */
+        .video-box {
+            border: 1px solid #333;
+            background: #000;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .video-title { color: #fff; font-size: 18px; margin-bottom: 10px; text-align: left; }
+        
+        /* FAKE VIDEO PLAYER (Placeholder) */
+        .player {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #111, #222);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            border: 1px dashed #444;
+        }
+
+        /* ANIMATIONS */
+        @keyframes float-ghost {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">🏠 Home</a>
+        <a href="projects.html">🎮 Projects</a>
+        <a href="about.html">👤 About</a>
+        <a href="premium.html" style="float:right; color: gold;">👑 VIP</a>
+    </div>
+
+    <div class="container">
+        <h1>VIP LOUNGE</h1>
+        <h2>Exclusive Content Area</h2>
+        <p>Welcome to the inner circle. Only members can see these videos.</p>
+
+        <hr style="border-color: #333; margin: 30px 0;">
+
+        <div class="video-box">
+            <div class="video-title">🔒 1. Advanced Mobile Legends Strategy (Locked)</div>
+            <div class="player">
+                [ VIDEO PLAYER WOULD GO HERE ]
+            </div>
+            <p style="font-size: 12px; color: #666; text-align: left; margin-top: 5px;">Duration: 12:45</p>
+        </div>
+
+        <div class="video-box">
+            <div class="video-title">🔒 2. How I Built This Website (Source Code)</div>
+            <div class="player">
+                [ VIDEO PLAYER WOULD GO HERE ]
+            </div>
+            <p style="font-size: 12px; color: #666; text-align: left; margin-top: 5px;">Duration: 45:20</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
