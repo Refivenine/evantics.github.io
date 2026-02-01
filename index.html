@@ -95,13 +95,35 @@
 .btn-youtube:hover {
     box-shadow: 0 0 25px rgba(255, 65, 108, 0.8);
 } }
-        /* MOBILE RULES (Only for phones) */
+       
 /* MOBILE RULES (Only for phones) */
     @media (max-width: 600px) {
         body {
             padding: 10px;
-            overflow-y: auto; /* ALLOW SCROLLING */
-            height: auto;     /* Let the page grow tall */
+            overflow-y: auto; /* Enables scrolling */
+        }
+
+        .container {
+            margin-top: 5px;
+            padding: 10px;
+            /* MAKING THE BOX GONE/BLEND: */
+            background: transparent !important; /* Removes the glass background */
+            border: none !important;            /* Removes the border line */
+            box-shadow: none !important;        /* Removes the glow/shadow */
+            width: 100%;
+        }
+
+        .btn, .btn-vip {
+            display: block;      /* Stack buttons */
+            width: 100%;         /* Full width */
+            margin: 8px 0;       /* Space between buttons */
+        }
+        
+        h1 {
+            margin-top: 30px;    /* Pushes text down below the buttons */
+            font-size: 30px;     /* Slightly smaller text for phone screens */
+        }
+    }
         }
         
         .container {
@@ -208,21 +230,27 @@
     <div class="topnav">
  
    
-   <div class="container">
-      <a href="index.html">🏠 Home</a>
-  <a href="projects.html">🎮 Projects</a>
-  <a href="about.html">👤 About Me</a>
-<br><br>
-<br><br>
-<a class="gumroad-button" href="https://refivenine.gumroad.com/l/roadtopinecreek">
-    <button class="btn btn-vip">👑 VIP Access</button>
-</a>
- <hr>
-       <h1 class="hacker-text">REFIVENINE</h1>
-        <p>Welcome to my official website.</p>
-        <hr>
-        <h2>EVANTICS</h2>
-      <img src="cover2.jpg" style="width: 200px; border-radius: 10px; margin-bottom: 15px;">
+ <div class="container">
+
+    <a href="index.html"><button class="btn">🏠 Home</button></a>
+    <a href="projects.html"><button class="btn">🎮 Projects</button></a>
+    <a href="about.html"><button class="btn">👤 About Me</button></a>
+    
+    <a class="gumroad-button" href="https://refivenine.gumroad.com/l/roadtopinecreek">
+        <button class="btn btn-vip">👑 VIP Access</button>
+    </a>
+
+    <div style="height: 40px;"></div> 
+
+    <h1 class="hacker-text">REFIVENINE</h1>
+    <p>Welcome to my official website.</p>
+    
+    <hr>
+    
+    <h2>EVANTICS</h2>
+    <img src="cover2.jpg" style="width: 200px; border-radius: 10px; margin-bottom: 15px;">
+
+</div>
       
 
     </div>
