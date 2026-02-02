@@ -1,140 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Re59</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Refivenine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-           cursor: url('sword.png'), auto;
-            font-family: sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-image: url('bg.jpg'); 
+            background-color: #000;
+            background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('cover2.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: white;
-            min-height: 100vh;
-            text-shadow: 2px 2px 5px #000000;
+            color: #ccc;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            margin: 0; padding: 20px;
         }
 
-        /* GLASS BOX STYLE */
         .container {
-            background-color: rgba(0, 0, 0, 0.75);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
             max-width: 600px;
             margin: 40px auto;
+            background: rgba(20, 20, 20, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #333;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
         }
 
-        /* MENU BAR STYLE */
-        .topnav {
-            background-color: rgba(0, 0, 0, 0.8);
-            overflow: hidden;
-            border-radius: 15px;
-            display: inline-block;
-            padding: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-        .topnav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #00c6ff;
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #00ffcc;
+            box-shadow: 0 0 15px #00ffcc;
+            margin-bottom: 20px;
+            object-fit: cover;
         }
 
-        /* BUTTON STYLES */
+        h1 { color: #fff; margin-bottom: 5px; }
+        .tagline { color: #00ffcc; font-family: 'Courier New', monospace; font-size: 14px; }
+
+        p { line-height: 1.6; margin-bottom: 25px; }
+
+        .stats {
+            display: flex; justify-content: space-around;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 15px 0;
+            margin: 20px 0;
+        }
+        .stat-box h3 { color: #fff; margin: 0; font-size: 20px; }
+        .stat-box span { font-size: 12px; color: #777; }
+
         .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            background: linear-gradient(45deg, #00c6ff, #0072ff);
-            box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+            background: #00ffcc; color: #000;
+            padding: 10px 25px; text-decoration: none;
+            font-weight: bold; border-radius: 20px;
+            display: inline-block; transition: 0.3s;
         }
-        .btn:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 0 25px rgba(0, 114, 255, 0.8);
+        .btn:hover { background: #fff; box-shadow: 0 0 15px #fff; }
+
+        .nav-back {
+            display: inline-block; margin-bottom: 20px;
+            color: #777; text-decoration: none; border: 1px solid #333;
+            padding: 5px 15px; border-radius: 20px;
         }
-
-        /* MOBILE FIX */
-        @media (max-width: 600px) {
-            body { padding: 10px; }
-            .container { padding: 20px; margin-top: 10px; }
-            .btn { display: block; width: 100%; margin: 10px 0; box-sizing: border-box; }
-            .topnav { display: flex; justify-content: center; width: 100%; box-sizing: border-box; }
-            .topnav a { font-size: 14px; padding: 10px 15px; }
-        }
-   /* ULTIMATE GLITCH (Buttons + Menu) */
-.btn:hover, .topnav a:hover {
-    animation: glitch-shake 0.3s infinite !important;
-    background-color: black !important;
-    text-shadow: 2px 2px #ff0000, -2px -2px #00ccff !important;
-    border: 2px solid white !important;
-    color: white !important;
-}
-
-@keyframes glitch-shake {
-    0% { transform: translate(0); }
-    25% { transform: translate(-3px, 3px); }
-    50% { transform: translate(-3px, -3px); }
-    75% { transform: translate(3px, 3px); }
-    100% { transform: translate(0); }
-}
-  /* LEVITATING GHOST EFFECT */
-.container {
-    animation: float-ghost 6s ease-in-out infinite;
-}
-
-@keyframes float-ghost {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); } /* Moves up */
-    100% { transform: translateY(0px); } /* Moves down */
-}
     </style>
 </head>
 <body>
 
-    <div class="topnav">
-      <a href="index.html">🏠 Home</a>
-      <a href="projects.html">🎮 Projects</a>
-      <a href="about.html">👤 About Me</a>
-    </div>
+    <a href="index.html" class="nav-back">⬅ Return to HQ</a>
 
     <div class="container">
-        <h1>Who is Refivenine?</h1>
+        <img src="https://refivenine.github.io/cover2.jpg" class="profile-pic">
         
-        <p>Refivenine is a developer, writer, and a gamer.</p>
-        <p>He create immersive stories and edit videos. Welcome to his digital workspace.</p>
-        
-        <hr style="border-color: rgba(255,255,255,0.2);">
+        <h1>Refivenine</h1>
+        <div class="tagline">DEVELOPER // AUTHOR // CREATOR</div>
 
-        <h3>🚀 His Skills</h3>
-        <p>🎮 Gamer</p>
-        <p>📚 Creative Writing</p>
-        <p>💻 App Building</p>
+        <div class="stats">
+            <div class="stat-box">
+                <h3>1</h3>
+                <span>APPS</span>
+            </div>
+            <div class="stat-box">
+                <h3>1</h3>
+                <span>BOOKS</span>
+            </div>
+            <div class="stat-box">
+                <h3>IND</h3>
+                <span>LOC</span>
+            </div>
+        </div>
 
-        <hr style="border-color: rgba(255,255,255,0.2);">
+        <p>
+            I am a digital creator focused on building decentralized social tools and immersive fiction.
+            <br><br>
+            My work spans from <strong>Full-Stack Development</strong> (HTML/Firebase) to <strong>Creative Writing</strong>. 
+            Currently building the EVTX Network.
+        </p>
 
-        <h3>📩 Contact Him</h3>
-        <a href="mailto:evanticschannel@gmail.com" class="btn">Send Email</a>
+        <a href="mailto:contact@refivenine.com" class="btn">✉️ Contact Me</a>
     </div>
 
 </body>
