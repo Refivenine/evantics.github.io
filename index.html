@@ -1,258 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head><script src="https://gumroad.com/js/gumroad.js"></script>
-    <title>Refivenine official Website</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Refivenine | HQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-       body {
-           cursor: url('sword.png'), auto;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 50px;
-    background: url('bg.jpg');
-    color: white; /* This makes the text white so it's readable */
-    min-height: 100vh;
-}
-        /* --- NAVIGATION MENU --- */
-.topnav {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark glass */
-    overflow: hidden;
-    border-radius: 15px; /* Rounded edges */
-    margin-bottom: 20px; /* Space below the menu */
-    display: inline-block; /* Keeps it tight to the buttons */
-    padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.topnav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light up when touched */
-    color: #00c6ff; /* Neon Blue text */
-}
-       .container {
-    /* THE GLASS EFFECT */
-    background-color: rgba(0, 0, 0, 0.75); /* Black background, 75% visible */
-    padding: 40px;
-    border-radius: 20px;       /* Rounded corners */
-    backdrop-filter: blur(5px); /* Blurs the graffiti slightly behind the box */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* A thin white border */
-
-    /* SIZE AND POSITION */
-    max-width: 600px;
-    margin: 60px auto; /* Centers the box on the page */
-
-       
-       
-      /* MAIN BUTTON STYLE (Blue/Purple) */
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    
-    /* THE NEON EFFECT */
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
-    box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    /* SUPER GLITCH HOVER */
-.btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 114, 255, 0.8);
-    animation: glitch-color 0.2s infinite;
-}
-
-@keyframes glitch-color {
-    0% { text-shadow: 4px 4px red; }
-    50% { text-shadow: -4px -4px blue; }
-    100% { text-shadow: 4px 4px red; }
-}
-}
-
-/* YOUTUBE STYLE (Red/Orange) */
-.btn-youtube {
-    background: linear-gradient(45deg, #ff416c, #ff4b2b) !important;
-    box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
-}
-
-.btn-youtube:hover {
-    box-shadow: 0 0 25px rgba(255, 65, 108, 0.8);
-} }
-       
-/* MOBILE RULES (Only for phones) */
-    @media (max-width: 600px) {
+        /* --- PRO MOBILE DESIGN --- */
         body {
-            padding: 10px;
-            overflow-y: auto; /* Enables scrolling */
+            background-color: #000;
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('cover2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            margin: 0; padding: 0;
+            min-height: 100vh;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
         }
 
         .container {
-            margin-top: 5px;
-            padding: 10px;
-            /* MAKING THE BOX GONE/BLEND: */
-            background: transparent !important; /* Removes the glass background */
-            border: none !important;            /* Removes the border line */
-            box-shadow: none !important;        /* Removes the glow/shadow */
-            width: 100%;
+            width: 90%;
+            max-width: 400px; /* Keeps it slim like an app */
+            padding: 20px;
         }
 
-        .btn, .btn-vip {
-            display: block;      /* Stack buttons */
-            width: 100%;         /* Full width */
-            margin: 8px 0;       /* Space between buttons */
-        }
-        
-        h1 {
-            margin-top: 30px;    /* Pushes text down below the buttons */
-            font-size: 30px;     /* Slightly smaller text for phone screens */
-        }
-    }
-        }
-        
-        .container {
-            padding: 20px; 
-            margin-top: 10px;
-            margin-bottom: 50px; /* Extra space at the bottom so button isn't stuck to edge */
+        /* PROFILE */
+        .profile-pic {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00ffcc;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+            margin-bottom: 15px;
+            object-fit: cover;
         }
 
-        .btn, .btn-vip {
-            display: block;      /* Stack buttons vertically */
-            width: 100%;         /* Full width */
-            margin: 10px 0;      /* Space between buttons */
+        h1 { font-size: 24px; margin: 0; letter-spacing: 2px; text-transform: uppercase; }
+        p { color: #aaa; font-size: 14px; margin-top: 5px; margin-bottom: 30px; }
+
+        /* UNIFORM BUTTONS */
+        .btn-stack {
+            display: flex; flex-direction: column; gap: 15px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%; /* Full width of container */
+            padding: 15px 0;
+            background: rgba(20, 20, 20, 0.8);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px; /* Pill shape */
+            border: 1px solid #333;
+            transition: 0.3s;
+            backdrop-filter: blur(5px);
+            font-size: 16px;
             box-sizing: border-box;
         }
-        
-        /* Remove the big gaps on mobile */
-        br {
-            display: none; 
+
+        .btn:hover {
+            transform: scale(1.02);
+            border-color: #00ffcc;
+            color: #00ffcc;
+            background: rgba(0, 0, 0, 0.9);
         }
-    } {
-    body {
-        padding: 10px; /* Less empty space on the edges */
-    }
-    .container {
-        padding: 20px; /* More room for text */
-        margin-top: 10px;
-    }
-    .btn {
-        display: block; /* Stacks buttons on top of each other */
-        width: 100%;    /* Makes buttons full width (easier to tap) */
-        margin: 10px 0; /* Adds space between the stacked buttons */
-        box-sizing: border-box; /* Prevents button size errors */
-    }
-}
-   /* TYPING ANIMATION */
-.hacker-text {
-    display: inline-block;
-    overflow: hidden; /* Hides the text until it types */
-    border-right: 3px solid #00c6ff; /* The blinking cursor */
-    white-space: nowrap; /* Keeps text on one line */
-    margin: 0 auto;
-    letter-spacing: 2px;
-    animation: 
-        typing 3s steps(30, end),
-        blink-caret .75s step-end infinite;
-    max-width: 0; /* Start hidden */
-    animation-fill-mode: forwards; /* Stay visible after typing */
-}
 
-/* The Typing Action */
-@keyframes typing {
-  from { max-width: 0 }
-  to { max-width: 100% }
-}
-   /* VIP BUTTON STYLE (Gold) */
-.btn-vip {
-    background: linear-gradient(45deg, #ffd700, #b8860b);
-    color: black;
-    font-weight: bold;
-    border: 2px solid #fff;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-}
+        /* SPECIAL BUTTONS */
+        .btn-app {
+            background: linear-gradient(45deg, #bf00ff, #8c00ff);
+            border: none;
+            box-shadow: 0 0 15px rgba(191, 0, 255, 0.5);
+        }
+        .btn-app:hover {
+            box-shadow: 0 0 25px rgba(191, 0, 255, 0.8);
+            color: #fff;
+        }
 
-.btn-vip:hover {
-    box-shadow: 0 0 30px rgba(255, 215, 0, 1);
-    transform: scale(1.1);
-    /* The glitch effect will automatically apply here too! */
-}     
+        .btn-vip {
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+        .btn-vip:hover {
+            background: #ffd700;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
 
-/* The Blinking Cursor */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00c6ff }
-}
-/* ULTIMATE GLITCH (Buttons + Menu) */
-.btn:hover, .topnav a:hover {
-    animation: glitch-shake 0.3s infinite !important;
-    background-color: black !important;
-    text-shadow: 2px 2px #ff0000, -2px -2px #00ccff !important;
-    border: 2px solid white !important;
-    color: white !important;
-}
-
-@keyframes glitch-shake {
-    0% { transform: translate(0); }
-    25% { transform: translate(-3px, 3px); }
-    50% { transform: translate(-3px, -3px); }
-    75% { transform: translate(3px, 3px); }
-    100% { transform: translate(0); }
-}
-/* LEVITATING GHOST EFFECT */
-.container {
-    animation: float-ghost 6s ease-in-out infinite;
-}
-
-@keyframes float-ghost {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); } /* Moves up */
-    100% { transform: translateY(0px); } /* Moves down */
-}
+        /* FOOTER */
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #555;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
-    <div class="topnav">
- 
-   
- <div class="container">
 
-    <a href="index.html"><button class="btn">🏠 Home</button></a>
-    <a href="projects.html"><button class="btn">🎮 Projects</button></a>
-    <a href="about.html"><button class="btn">👤 About Me</button></a>
+    <div class="container">
+        
+        <img src="cover2.jpg" class="profile-pic">
+        <h1>Refivenine</h1>
+        <p>Developer // Creator // Author</p>
 
-    <a href="https://refivenine.github.io/Evtx/" target="_blank"><button class="btn">🌐 Launch Social App</button></a>
-    <a class="gumroad-button" href="https://refivenine.gumroad.com/l/roadtopinecreek">
-        <button class="btn btn-vip">👑 VIP Access</button>
-    </a>
+        <div class="btn-stack">
+            
+            <a href="index.html" class="btn">🏠 Home</a>
+            
+            <a href="projects.html" class="btn">🎮 Projects</a>
+            
+            <a href="about.html" class="btn">👤 About Me</a>
+            
+            <a href="https://refivenine.github.io/Evtx/" class="btn btn-app">
+                🚀 Launch Social App
+            </a>
 
-    <div style="height: 40px;"></div> 
+            <a href="https://refivenine.gumroad.com/l/roadtopinecreek" target="_blank" class="btn btn-vip">
+                👑 VIP Access (Book)
+            </a>
 
-    <h1 class="hacker-text">REFIVENINE</h1>
-    <p>Welcome to my official website.</p>
-    
-    <hr>
-    
-    <h2>EVANTICS</h2>
-    <img src="cover2.jpg" style="width: 200px; border-radius: 10px; margin-bottom: 15px;">
+        </div>
 
-</div>
-      
+        <div class="footer">EVANTICS SYSTEMS © 2026</div>
 
     </div>
 
